@@ -45,11 +45,11 @@ A realtime chat application with WebSockets, mention support, emoji pickers, and
 
 ### Screenshots:
 
-#### 1. Originkit Hero 40 Section (Dithered Visuals & Single "Lets start" Entry)
-![Team Chat Hero](docs/screenshots/chat-hero.png)
+#### 1. Originkit Hero 40 Section — Dark Theme (Dithered Visuals & Single "Lets start" Entry)
+![Team Chat Hero Dark](docs/screenshots/chat-hero-dark.png)
 
-#### 2. Glassmorphic 3D Chat Interface (Live Socket.io Messaging & Mentions)
-![Team Chat Interface](docs/screenshots/chat-interface.jpg)
+#### 2. Glassmorphic 3D Chat Interface — Dark Theme (Live Socket.io Messaging & Mentions)
+![Team Chat Interface Dark](docs/screenshots/chat-interface-dark.png)
 
 ### Key Features:
 - **Originkit Hero 40**: Integrated Hero 40 section with dithered white-hands shader and seamless transition into the chat interface.

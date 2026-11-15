@@ -11,13 +11,24 @@ This repository contains the complete implementation for two React projects:
 
 A single-page, infinite scroll photo gallery built with React, Vite, and CSS Glassmorphism.
 
+### Screenshots:
+
+#### 1. Interactive 3D Voxel Sunset Hero (Zero-Scroll Lock)
+![Photo Gallery Hero](docs/screenshots/gallery-hero.jpg)
+
+#### 2. Seamless Flush Mosaic Grid (100% Full-Black Exhibition with Infinite Scroll)
+![Photo Gallery Grid](docs/screenshots/gallery-grid.jpg)
+
+#### 3. Frosted Glass Contact Section
+![Photo Gallery Contact](docs/screenshots/gallery-contact.png)
+
 ### Key Features:
 - **Interactive 3D Voxel Hero**: 3D interactive Sunset Meadow canvas (`MeadowBlush.tsx`) with zero-scroll landing lock and smooth cinematic entry.
 - **Infinite Scrolling**: IntersectionObserver sentinel and scroll listener automatically fetches subsequent pages from the Picsum feed API with automatic fallback caching and deduplication.
 - **Flush Mosaic Grid**: Seamless zero-gap photo grid with responsive layouts across desktops, tablets, and mobile devices.
 - **Interactive Likes**: Real-time FontAwesome thumbs-up button incrementing per photo.
 - **Lightbox Viewer**: Fullscreen modal with arrow and keyboard navigation.
-- **Glassmorphic Contact Section**: Frosted glass card with ambient background orbs.
+- **Glassmorphic Contact Section**: Frosted glass card with ambient background glowing orbs.
 
 ### How to Run:
 ```bash
@@ -31,6 +42,11 @@ npm run dev
 ## 2. Team Chat App (`chat-app/`)
 
 A realtime chat application with WebSockets, mention support, emoji pickers, and glassmorphism UI.
+
+### Screenshot:
+
+#### Glassmorphic 3D Chat Interface
+![Team Chat Interface](docs/screenshots/chat-interface.jpg)
 
 ### Key Features:
 - **Originkit Hero 40**: Integrated Hero 40 section with dithered white-hands shader and seamless transition into the chat interface.

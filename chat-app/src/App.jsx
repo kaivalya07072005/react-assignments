@@ -18,7 +18,7 @@ function App() {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [connectionStatus, setConnectionStatus] = useState("connecting");
   const [activeView, setActiveView] = useState("hero"); // "hero" | "chat"
-  const [theme, setTheme] = useState("light"); // "light" | "dark"
+  const [theme, setTheme] = useState("dark"); // "light" | "dark"
 
   // Mention dropdown state
   const [mentionQuery, setMentionQuery] = useState(null);

@@ -266,44 +266,45 @@ body {
 }
 
 .hero-eyebrow-tag {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.82rem;
-  letter-spacing: 0.38em;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+  font-size: clamp(1.15rem, 1.8vw, 1.6rem);
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
   background: none;
   border: none;
   padding: 0;
   border-radius: 0;
-  text-transform: uppercase;
+  text-transform: none;
   display: block;
   margin-bottom: 0.85rem;
   box-shadow: none;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-editorial-title {
-  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
-  font-size: clamp(2.3rem, 4.9vw, 4.25rem);
-  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2.8rem, 5.5vw, 5.2rem);
+  font-weight: 800;
   color: #ffffff;
-  line-height: 1.12;
-  letter-spacing: -0.01em;
-  margin: 0 0 1.1rem;
-  white-space: nowrap;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 auto 1.2rem;
+  max-width: 960px;
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.45);
 }
 
 .hero-editorial-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(0.86rem, 1.3vw, 0.98rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
   font-weight: 400;
-  color: #f7f3ee;
-  max-width: 560px;
-  margin: 0 auto 1.8rem;
-  line-height: 1.55;
-  letter-spacing: 0.02em;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  color: #c4c4c8;
+  max-width: 620px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* Glassmorphic Pill CTA Button (No black color, crystal clear glass styling) */
@@ -630,30 +631,25 @@ body {
   display: none;
 }
 
-/* Sleek Glass Frame Surrounding the Gallery */
+/* Clean Mosaic Gallery Wrapper (Glass box frame removed for seamless exhibition) */
 .gallery-glass-wrapper {
   position: relative;
   z-index: 2;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 3.5rem 2.5rem 4rem;
-  background: rgba(14, 15, 18, 0.72);
-  backdrop-filter: blur(28px) saturate(180%);
-  -webkit-backdrop-filter: blur(28px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 28px;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.9),
-              inset 0 1px 1px rgba(255, 255, 255, 0.4),
-              inset 0 0 20px rgba(255, 255, 255, 0.04);
-  overflow: hidden;
-  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  padding: 1rem 0 3rem;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .gallery-glass-wrapper:hover {
-  border-color: rgba(255, 255, 255, 0.38);
-  box-shadow: 0 40px 110px rgba(0, 0, 0, 0.95),
-              inset 0 1px 1.5px rgba(255, 255, 255, 0.55),
-              inset 0 0 28px rgba(255, 255, 255, 0.07);
+  border-color: transparent;
+  box-shadow: none;
 }
 
 .section-header,
@@ -1214,40 +1210,40 @@ body {
 .glass-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.85;
+  filter: blur(80px);
+  opacity: 0.95;
 }
 
 /* Big Vibrant Violet/Purple Orb on Top Right */
 .glass-orb-purple {
-  width: 440px;
-  height: 440px;
-  background: radial-gradient(circle, #a855f7 0%, #7e22ce 60%, rgba(126, 34, 206, 0) 100%);
-  top: 8%;
-  right: 12%;
-  opacity: 0.9;
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, #a855f7 0%, #7e22ce 55%, rgba(126, 34, 206, 0) 100%);
+  top: 5%;
+  right: 8%;
+  opacity: 0.95;
   animation: orbFloat1 12s ease-in-out infinite alternate;
 }
 
-/* Hot Pink / Magenta Orb on Bottom Left */
+/* Hot Crimson / Magenta Orb on Bottom Left */
 .glass-orb-pink {
-  width: 380px;
-  height: 380px;
-  background: radial-gradient(circle, #f43f5e 0%, #e11d48 60%, rgba(225, 29, 72, 0) 100%);
-  bottom: 10%;
-  left: 10%;
-  opacity: 0.85;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, #f43f5e 0%, #e11d48 55%, rgba(225, 29, 72, 0) 100%);
+  bottom: 8%;
+  left: 6%;
+  opacity: 0.95;
   animation: orbFloat2 10s ease-in-out infinite alternate;
 }
 
 /* Coral / Rose Accent Orb near Top Center */
 .glass-orb-coral {
-  width: 260px;
-  height: 260px;
-  background: radial-gradient(circle, #fb7185 0%, #e11d48 70%, rgba(225, 29, 72, 0) 100%);
-  top: 15%;
-  left: 36%;
-  opacity: 0.65;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #fb7185 0%, #e11d48 65%, rgba(225, 29, 72, 0) 100%);
+  top: 10%;
+  left: 32%;
+  opacity: 0.8;
 }
 
 @keyframes orbFloat1 {
@@ -1260,22 +1256,26 @@ body {
   100% { transform: translate(25px, -20px) scale(1.05); }
 }
 
-/* Authentic Glassmorphic Card Frame (semi-translucent frosted glass, edge highlights) */
+/* Authentic Glassmorphic Card Frame with High-Fidelity Glow & Edge Highlights */
 .contact-glass-card {
   position: relative;
   z-index: 2;
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  border: 1.5px solid rgba(255, 255, 255, 0.35);
-  border-radius: 32px;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.7),
-              inset 0 1.5px 2px rgba(255, 255, 255, 0.6),
-              inset 0 -1px 2px rgba(255, 255, 255, 0.15),
-              inset 0 0 30px rgba(255, 255, 255, 0.05);
+  background-color: rgba(18, 14, 25, 0.45);
+  background-image: 
+    radial-gradient(circle at 35% 42%, rgba(225, 29, 72, 0.65) 0%, rgba(225, 29, 72, 0.18) 38%, transparent 65%),
+    radial-gradient(circle at 78% 36%, rgba(147, 51, 234, 0.75) 0%, rgba(126, 34, 206, 0.22) 42%, transparent 70%);
+  background-size: cover;
+  backdrop-filter: blur(48px) saturate(220%);
+  -webkit-backdrop-filter: blur(48px) saturate(220%);
+  border: 1.5px solid rgba(255, 255, 255, 0.38);
+  border-radius: 36px;
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.85),
+              inset 0 1.5px 2px rgba(255, 255, 255, 0.75),
+              inset 0 -1.5px 2px rgba(255, 255, 255, 0.2),
+              inset 0 0 35px rgba(255, 255, 255, 0.08);
   overflow: hidden;
   padding: 4.5rem 4rem 2rem;
   display: flex;
@@ -1285,10 +1285,10 @@ body {
 }
 
 .contact-glass-card:hover {
-  border-color: rgba(255, 255, 255, 0.55);
-  box-shadow: 0 40px 110px rgba(0, 0, 0, 0.8),
-              inset 0 2px 3px rgba(255, 255, 255, 0.75),
-              inset 0 0 40px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 45px 120px rgba(0, 0, 0, 0.95),
+              inset 0 2px 3px rgba(255, 255, 255, 0.9),
+              inset 0 0 45px rgba(255, 255, 255, 0.12);
 }
 
 .contact-editorial-container {
@@ -1492,8 +1492,8 @@ body {
     gap: 0.75rem;
   }
   .gallery-glass-wrapper {
-    padding: 2.5rem 1.5rem;
-    border-radius: 24px;
+    padding: 1rem 0;
+    border-radius: 0;
   }
 }
 

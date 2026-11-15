@@ -246,16 +246,17 @@ function App() {
             </div>
           </nav>
 
-          {/* Restored exact original writings in clean, uncluttered layout */}
+          {/* Restored exact original writings in clean, uncluttered layout matching reference */}
           <div className="hero-editorial-center">
-            <span className="hero-eyebrow-tag">THE ART OF SEEING</span>
+            <span className="hero-eyebrow-tag">Authentic. Timeless. Captivating.</span>
 
             <h1 className="hero-editorial-title">
-              A Gallery of Light &amp; Shadow
+              Photography That Tells Your Story
             </h1>
 
             <p className="hero-editorial-subtitle">
-              Capturing moments through the lens of artistry and emotion
+              A curated portfolio of portraits, moments, and visual storytelling.<br />
+              Let's capture something real.
             </p>
 
             <button

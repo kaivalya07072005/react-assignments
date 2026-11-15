@@ -28,16 +28,12 @@ function App() {
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
-  // Sync theme class to root body & document
+  // Apply the theme globally only while the hero is active.
   useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      document.body.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.body.classList.remove("dark");
-    }
-  }, [theme]);
+    const isDarkHero = activeView === "hero" && theme === "dark";
+    document.documentElement.classList.toggle("dark", isDarkHero);
+    document.body.classList.toggle("dark", isDarkHero);
+  }, [activeView, theme]);
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
@@ -228,7 +224,11 @@ function App() {
   };
 
   return (
-    <div className={`chat-app-root ${theme === "dark" ? "dark" : ""}`}>
+    <div
+      className={`chat-app-root ${
+        activeView === "hero" && theme === "dark" ? "dark" : ""
+      }`}
+    >
       {/* 1. HERO VIEW */}
       {activeView === "hero" && (
         <Hero40
@@ -264,15 +264,6 @@ function App() {
               </div>
 
               <div className="header-right-group">
-                <button
-                  type="button"
-                  className="theme-pill-btn"
-                  onClick={toggleTheme}
-                  title="Toggle Light/Dark Theme"
-                >
-                  {theme === "dark" ? "☀️ Light" : "🌙 Dark"}
-                </button>
-
                 <div className={`connection-pill ${connectionStatus === "connected" ? "online" : "offline"}`}>
                   <span className="live-dot" />
                   <span>{connectionStatus === "connected" ? "Live" : "Offline"}</span>

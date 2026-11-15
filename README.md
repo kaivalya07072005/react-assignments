@@ -5,6 +5,11 @@ This repository contains the complete implementation for two React projects:
 1. **Photo Gallery Application** (`photo-gallery/`)
 2. **Realtime Team Chat Application** (`chat-app/`)
 
+## Live Demos
+
+- [Photo Gallery](https://react-assignments-henna.vercel.app)
+- [Team Chat App](https://react-assignments-l8mk.vercel.app)
+
 ---
 
 ## 1. Photo Gallery (`photo-gallery/`)

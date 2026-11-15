@@ -43,9 +43,12 @@ npm run dev
 
 A realtime chat application with WebSockets, mention support, emoji pickers, and glassmorphism UI.
 
-### Screenshot:
+### Screenshots:
 
-#### Glassmorphic 3D Chat Interface
+#### 1. Originkit Hero 40 Section (Dithered Visuals & Single "Lets start" Entry)
+![Team Chat Hero](docs/screenshots/chat-hero.png)
+
+#### 2. Glassmorphic 3D Chat Interface (Live Socket.io Messaging & Mentions)
 ![Team Chat Interface](docs/screenshots/chat-interface.jpg)
 
 ### Key Features:

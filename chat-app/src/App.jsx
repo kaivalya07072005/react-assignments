@@ -9,7 +9,8 @@ import "./App.css";
 
 // Exact assignment specified user list
 const USER_LIST = ["Alan", "Bob", "Carol", "Dean", "Elin"];
-const SOCKET_SERVER_URL = "http://localhost:4000";
+const SOCKET_SERVER_URL =
+  import.meta.env.VITE_SOCKET_SERVER_URL || "http://localhost:4000";
 
 function App() {
   const [messages, setMessages] = useState([]);
